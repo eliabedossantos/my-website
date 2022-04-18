@@ -210,3 +210,42 @@ header .navbar-nav .nav-item:hover .nav-link::after {
     position: absolute;
     bottom: -7rem;
 }
+
+/* ### TOP ### */
+section.top{
+    height: 85vh;
+    background-image: url('../img/vitrine.png');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+
+.top__content h1{
+    font-size: 2em;
+    color: var(--yellow-color);
+}
+
+.top__content h2{
+    font-size: 1.7em;
+    color: white;
+}
+
+.profile__index{
+    position: absolute;
+    left: 50%;
+    bottom: -10em;
+}
+
+/* ### MOBILE ### */
+
+@media(max-width: 767px){
+    .top__content h1{
+        font-size: 1.5em;
+    }
+    section.top{
+        height: 40vh;
+    }
+}
