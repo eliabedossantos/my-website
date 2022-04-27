@@ -27,7 +27,7 @@ body{
     font-weight: bold;
 }
 .white{
-    color: white;
+    color: white !important;
 }
 /* ### HEADER ### */
 header {
@@ -233,10 +233,50 @@ section.top{
     color: white;
 }
 
-.profile__index{
+.profile__index {
+    position: sticky;
+    margin-top: -8em;
+}
+
+/* ABOUT ME */
+
+.title__section{
+    font-size: 1.5em;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.title__section::after {
+    content: '';
+    width: 48px;
+    height: 5px;
+    background-color: var(--yellow-color);
     position: absolute;
-    left: 50%;
-    bottom: -10em;
+    bottom: -10px;
+    left: 22%;
+}
+
+div.profile__index::before{
+  content: " ";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -42px;
+  right: 0;
+  background-image: url("../img/icons/bg-top-sections-white.svg");
+  background-size: cover;
+}
+
+/* ### PORTFOLIO ### */
+section.portfolio{
+    background-color: var(--gray-color);
+    padding: 5% 0;
+
+}
+section.portfolio .title__section::after{
+    left: 30%;
 }
 
 /* ### MOBILE ### */
